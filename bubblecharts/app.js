@@ -1,14 +1,18 @@
-angular.module('myApp', ['ngStorage', 'ngMaterial', 'ngMessages' ,'ngSanitize','loklak'])
+angular.module('myApp', ['ngStorage', 'ngMaterial', 
+    'ngMessages' ,'ngSanitize','loklak'])
 
-// dataService.polltweets(@querytype, @queryterm) -> polls & adds to $localStorage
+// dataService.polltweets(@querytype, @queryterm)
+//     -> polls & adds to $localStorage
 // $localStorage.tweets: stores tweet objs in array
 
 // eg. api call ("/api/search.json?q=from:myhandle")
 // querytype: eg. "search" (using /api/search.json)
-// queryterm: eg. "from:myhandle" (refer to http://loklak.org/api.html for more)
+// queryterm: eg. "from:myhandle" 
+//     (refer to http://loklak.org/api.html for more)
 
 
-.controller('MainCtrl', ['$scope', '$interval', '$localStorage', '$q','$sce', 'queryService',
+.controller('MainCtrl', ['$scope', '$interval', 
+    '$localStorage', '$q','$sce', 'queryService',
     function($scope, $interval, $localStorage, $q, $sce, queryService) {
         
         var vm = this;
@@ -35,10 +39,12 @@ angular.module('myApp', ['ngStorage', 'ngMaterial', 'ngMessages' ,'ngSanitize','
         window.$scope = $scope;
         
         $scope.handlify = function(handle){
-            return $sce.trustAsHtml("<a href=\"https://twitter.com/" + handle + "\">@" + handle + "</a>");
+            return $sce.trustAsHtml("<a href=\"https://twitter.com/" + 
+                handle + "\">@" + handle + "</a>");
         }
         $scope.rmvSpan = function(username) {
-            return username.replace(/<img.*?false" alt="(.).*?>/g,"$1").replace(/&nbsp;/g," ");
+            return username.replace(/<img.*?false" alt="(.).*?>/g,"$1")
+                           .replace(/&nbsp;/g," ");
         };
         $scope.poll = function(type, term, interval){
             
