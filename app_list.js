@@ -1,9 +1,11 @@
 var app = angular.module('appListApp', ['loklak', 'ngTouch']);
 
-app.controller("app_list", function($scope, $http) {
+app.controller("app_list", function ($scope, $http) {
     $scope.apps = [];
     $scope.categoryKeys = [];
     var suggestionList = [];
+    $http.get('apps.json').success(function (data) {
+
     $http.get('apps.json').success(function(data) {
         $scope.categoryKeys = data.categories;
         $scope.apps = data.apps;
@@ -33,7 +35,7 @@ app.controller("app_list", function($scope, $http) {
     });
        
 
-    $scope.categoryFilter = function(event) {
+    $scope.categoryFilter = function (event) {
         item = event.target.id;
         if (item != 'All') {
             itemName = item.match(/[A-Z][a-z]+/g);
