@@ -128,23 +128,6 @@
       "@context": "http://schema.org",
       "@type": "SoftwareApplication",
       "permissions": ["/api/search.json"],
-      "name": "movietweets",
-      "headline": "Loklak movie tweets",
-      "alternativeHeadline": "work from GCI task",
-      "applicationCategory": "Search",
-      "applicationSubCategory": "Text Retrieval",
-      "operatingSystem": "http://loklak.org",
-      "author": {
-        "@type": "Person",
-        "name": "Fossasia",
-        "url": "http://fossasia.org",
-        "sameAs": "https://github.com/fossasia"
-      }
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "SoftwareApplication",
-      "permissions": ["/api/search.json"],
       "name": "tweetsleaderboard",
       "headline": "Leaderboard",
       "alternativeHeadline": "A Leaderboard based on the number of tweets",
@@ -180,23 +163,6 @@
     {
       "@context": "http://schema.org",
       "@type": "SoftwareApplication",
-      "permissions": ["/api/search.json"],
-      "name": "webtweets",
-      "headline": "Loklak Web Tweets",
-      "alternativeHeadline": "Loklak-webtweets",
-      "applicationCategory": "Misc",
-      "applicationSubCategory": "Text Retrieval",
-      "operatingSystem": "http://loklak.org",
-      "author": {
-        "@type": "Person",
-        "name": "Fossasia",
-        "url": "http://fossasia.org/",
-        "sameAs": "https://github.com/fossasia"
-      }
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "SoftwareApplication",
       "permissions": ["/api/resetpassword.json"],
       "name": "resetpass",
       "headline": "Reset your Loklak Password",
@@ -227,26 +193,6 @@
         "name": "Anshuman Agarwal",
         "url": "https://github.com/anshuman73",
         "sameAs": "https://github.com/anshuman73"
-      }
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "SoftwareApplication",
-      "permissions": [
-        "/api/search.json",
-        "/api/suggest.json"
-      ],
-      "name": "tweetheatmap",
-      "headline": "Loklak Tweet Heat Map",
-      "alternativeHeadline": "Tweet Heat Map",
-      "applicationCategory": "Visualizer",
-      "applicationSubCategory": "Hello World",
-      "operatingSystem": "http://loklak.org",
-      "author": {
-        "@type": "Person",
-        "name": "Fossasia",
-        "url": "http://fossasia.org",
-        "sameAs": "https://github.com/fossasia"
       }
     },
     {
@@ -368,46 +314,6 @@
         "name": "Leon",
         "url": "http://leonmak.me",
         "sameAs": "https://github.com/leonmak"
-      }
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "SoftwareApplication",
-      "permissions": [
-        "/api/search.json",
-        "/api/suggest.json"
-      ],
-      "name": "heatmapper",
-      "headline": "Loklak Heat Mapper",
-      "alternativeHeadline": "loklak heat mapper",
-      "applicationCategory": "Visualizer",
-      "applicationSubCategory": "Hello World",
-      "operatingSystem": "http://loklak.org",
-      "author": {
-        "@type": "Person",
-        "name": "Fossasia",
-        "url": "http://fossasia.org",
-        "sameAs": "https://github.com/fossasia"
-      }
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "SoftwareApplication",
-      "permissions": [
-        "/api/search.json",
-        "/api/suggest.json"
-      ],
-      "name": "heatmap",
-      "headline": "Loklak Heat Map",
-      "alternativeHeadline": "loklakheatmap",
-      "applicationCategory": "Visualizer",
-      "applicationSubCategory": "Hello World",
-      "operatingSystem": "http://loklak.org",
-      "author": {
-        "@type": "Person",
-        "name": "Fossasia",
-        "url": "http://fossasia.org",
-        "sameAs": "https://github.com/fossasia"
       }
     },
     {
@@ -615,7 +521,7 @@
      "style" : {
         "background-color": "#039BE5"
       }
-    }   
+    }
   ],
   "category": {
     "Scraper": [
@@ -634,8 +540,7 @@
       "resetpass",
       "signup",
       "accountpermissions",
-      "keyRegistration",
-      "webtweets"
+      "keyRegistration"
     ],
     "Demo": ["boilerplate"],
     "Search": [
@@ -643,17 +548,13 @@
       "querybrowser",
       "LQL",
       "knowTheDiff",
-      "yathannsh",
-      "movietweets"
+      "yathannsh"
     ],
     "Visualizer": [
       "barchart",
       "bubblecharts",
       "sentimentVisualizer",
-      "userprofile",
-      "tweetheatmap",
-      "heatmap",
-      "heatmapper"
+      "userprofile"
     ],
     "Internet Of Things": [
       "NMEA",
